@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
         val binding: ActivityMainBinding =
             DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        /* pass ViewModel the key of the shared preference
+        *  obtained from string resources */
+        viewModel.spLikeKey = getString(R.string.likes_count_key)
+
         binding.likeVM = viewModel
         binding.lifecycleOwner = this // this must be added to awake the viewModel+ui intersection
         binding.btnLike.setOnClickListener {

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Lab Sheet 02</string>
+    <string name="likes_count_key">LIKES_COUNT_KEY</string>
 </resources>
